@@ -81,12 +81,12 @@ namespace RegistroCivil
                 int cinturones = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Ingrese 1 si es diesel, 0 si no es diesel");
                 int opcionpatio1 = Convert.ToInt32(Console.ReadLine());
-                bool diesel;
+                bool diesel= false;
                 if (opcionpatio1 == 1)
                 { diesel = true; }
                 else { diesel = false; }
 
-                Car lambo = new Car(marca,modelo,null, patente,cinturones, diesel);
+                Car lambo = new Car(marca,modelo,year ,null, patente,cinturones, diesel);
             }
 
 
